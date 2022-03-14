@@ -7,9 +7,9 @@
         </encoder>
     </appender>
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOGS_ABSOLUTE_PATH}/home.log</file>
+        <file>${LOGS_ABSOLUTE_PATH}/homecheck.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/home.%d{yyyy-MM-dd}.log.zip</fileNamePattern>
+            <fileNamePattern>${LOGS_ABSOLUTE_PATH}/homecheck.%d{yyyy-MM-dd}.log.zip</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder>
