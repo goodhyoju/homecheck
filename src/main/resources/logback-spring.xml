@@ -19,7 +19,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.goblinbat.eagle" level="debug">
+    <logger name="com.goblinbat" level="debug">
         <appender-ref ref="file"/>
     </logger>
     <logger name="org.springframework" level="info">

@@ -8,13 +8,13 @@
         <version>2.6.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>home</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>home</name>
-    <description>home</description>
+    <groupId>com.goblinbat</groupId>
+    <artifactId>homecheck</artifactId>
+    <version>1.0</version>
+    <name>homecheck</name>
+    <description>homecheck</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
