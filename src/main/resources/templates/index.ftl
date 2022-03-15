@@ -436,11 +436,21 @@
             </p>
           </div>
         </div><!-- End  Item-->
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-2">
+            <i class="ri-edit-2-fill"></i>
+            <h4>상담신청 비밀번호</h4>
+          </div>
+          <div class="col-lg-10">
+            <p>
+                <input type='password' id="password" class="form-control" />
+            </p>
+          </div>
+        </div><!-- End  Item-->
         <div class="col-12" style="float: right;">
-          <button class="btn btn-primary" style="width:100%;"><i class="ri-checkbox-circle-fill"></i> 신청하기</button>
+          <button class="btn btn-primary" data-toggle="confirmation" style="width:100%;"><i class="ri-checkbox-circle-fill"></i> 신청하기</button>
         </div>
       </div>
-
     </section><!-- End F.A.Q Section -->
 
   </main><!-- End #main -->
@@ -466,6 +476,8 @@
   <!-- bootstrap datetimepicker -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
   <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap-confirmation.min.js"></script>
 
 <script type="text/javascript">
   $("#datetimepicker1") .datetimepicker({
@@ -494,11 +506,24 @@
       new daum.Postcode({
         oncomplete: function(data) { //선택시 입력값 세팅
           document.getElementById("apt_address").value = data.address; // 주소 넣기
-         // document.querySelector("input[name=address_detail]").focus(); //상세입력 포커싱
         }
       }).open();
     });
   }
+  $('[data-toggle="confirmation"]').confirmation({
+    placement: 'top',
+    title: '상담신청을 등록하시겠습니까?',
+    btnOkLabel: '등록',
+    btnOkClass: 'btn btn-success',
+    btnCancelLabel: '취소',
+    btnCancelClass: 'btn btn-danger',
+    onConfirm: function(event, element) {
+
+    },
+    onCancel: function(event, element) {
+
+    }
+  });
 </script>
 </body>
 
